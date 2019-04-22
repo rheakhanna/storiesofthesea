@@ -4,7 +4,10 @@ html, body {
 
 }
 
+body {
+  overflow: hidden;
 
+}
 
 .menuleft {
 	background-color: #464866;
@@ -32,6 +35,10 @@ html, body {
    	position: fixed;
 
  
+}
+
+.begin a:hover {
+  text-decoration: none;
 }
 
 .home:hover {
@@ -98,27 +105,6 @@ html, body {
 
 }
 
-.progress-container {
-  overflow: hidden;
-  width: 31%;
-  height: 30px;
-  margin-top: 24%;
-  margin-left: 63.5%;
-  transform: rotate(90deg);
-  background: transparent;
-  z-index: 80;
-  opacity: 0.9;
-  position: fixed;
-}
-
-.progress-bar {
-  height: 8px;
-  background-color: red;
-  width: 0%;
-  margin-top: 0%;
-}
-
-
 
 .righttext{
 	transform: rotate(90deg);
@@ -127,7 +113,6 @@ html, body {
    -o-transform:rotate(90deg);
   	right: 0.7%;
   	top: 19%;
-
    	position: fixed;
    	display: inline-block;
  
@@ -236,9 +221,9 @@ html, body {
 
 .box {
 	position: absolute;
-	margin-top: 14%;
+	margin-top: 17%;
   width:80%;
-  display: none;
+display: none;
 
 
 }
@@ -251,12 +236,12 @@ html, body {
   padding: 6px 0;
   margin: 0;
   letter-spacing: 5px;
-  font-size: 90px;
+  font-size: 80px;
   background-color: transparent;
   font-family: 'Brandon Grotesque', sans-serif;
   text-transform: uppercase;
   color: #001269;
-  font-weight: 800;
+  font-weight: 600;
   background-color: transparent;
 }
 
@@ -265,7 +250,7 @@ html, body {
   color: #001269;
   letter-spacing: 1.4px;
   font-size: 14px;
-  padding-top: 50px;
+  padding-top: 60px;
   padding-bottom: 10px;
   padding-right: 20px;
   line-height: 22px;
@@ -489,8 +474,9 @@ html, body {
   left: 0;
   right: 0;
   top: 100%;
-  display: none;
   overflow:hidden;
+  display: none;
+
 
 }
 
@@ -1195,8 +1181,8 @@ html, body {
   font: 13.5px/80px 'Brandon Grotesque', sans-serif;
   text-transform: uppercase;
   border-radius: 50%;
-  animation: shadow-pulse 1.5s infinite, newfloat 4s infinite;
   display: none;
+  animation: shadow-pulse 1.5s infinite, newfloat 4s infinite;
 }
 
 
@@ -2985,13 +2971,13 @@ cursor: pointer;
 .flashlight {
   position:absolute;
   z-index:-1;
-  height:200px;
-  width:200px;
-  border-radius:150px;
+  height:140px;
+  width:140px;
+  border-radius: 150px;
   background-color:#FFFB8C;
   opacity: 0.7;
   display: none;
-  box-shadow:1px 1px 100px #ffef73;
+  box-shadow:1px 1px 90px #ffef73;
 }
 .flashlight2 {
   position:absolute;
@@ -3135,16 +3121,20 @@ cursor: pointer;
   z-index: 80;
 }
 
+.wrapper {
+    position: relative;
+}
+
 .titleinfo {
   font-family: 'Montserrat';
   color: #dfe4ff;
   width:95%;
   left:2%;
-  top:-5%;
+  margin-top:-2%;
   overflow: hidden;
   letter-spacing: 3px;
   font-size: 84px;
-  position: absolute;
+  position: relative;
   padding-top: 50px;
   padding-bottom: 10px;
   padding-right: 20px;
@@ -3162,8 +3152,8 @@ cursor: pointer;
   font-weight: 400;
   border-bottom: 1px solid #001269;
   padding-bottom: 2px;
-  top: 94%;
-  left: 41.5%;
+  top: 95.6%;
+  left: 41%;
   text-transform: uppercase;
   cursor: pointer;
   z-index: 90;
