@@ -212,7 +212,7 @@ $(".totwi").click(function() {
 
  	$('html,body').animate({
         scrollTop: $("#pagethree").offset().top},
-        4000,'linear');
+        2000,'linear');
 
  
  	$(".totwi").fadeOut(1000);
@@ -340,7 +340,7 @@ $(".tomid").click(function() {
 
  	$('html,body').animate({
         scrollTop: $("#pagefour").offset().top},
-        4000,'linear');
+        3000,'linear');
 
 
  	$(".tomid").fadeOut(1000);
@@ -468,7 +468,7 @@ $(".toabyss").click(function() {
 
  	$('html,body').animate({
         scrollTop: $("#pagefive").offset().top},
-        4000,'linear');
+        3000,'linear');
 
 
  	$(".toabyss").fadeOut(1000);
