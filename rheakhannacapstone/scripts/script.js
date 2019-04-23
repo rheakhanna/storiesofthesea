@@ -113,8 +113,8 @@ $(".about").click(function() {
 $(".start").click(function() {
  	$(".infocontainer").fadeOut(1500);
  	$(".infoconttwo").show();
- 	$(".infoconttwo").delay(1000).animate ({
-          top: '40%'},1300);
+ 	$(".infoconttwo").delay(800).animate ({
+          top: '40%'},1000);
  	$(".ray_box").delay(1500).fadeIn(2500);
  	$(".continue").delay(3000).fadeIn(2000);
 
@@ -128,11 +128,11 @@ $(".continue").click(function() {
           top: '-90%'},1300);
  	
  	$(".infocontthree").show();
- 	$(".infocontthree").delay(1500).animate ({
-          top: '40%'},1300);
- 	$(".sunplants").delay(2600).fadeIn(4000);
- 	$(".sundol").delay(3000).fadeIn(3000);
- 	$(".sundoltwo").delay(3500).fadeIn(3000);
+ 	$(".infocontthree").delay(1800).animate ({
+          top: '40%'},1200);
+ 	$(".sunplants").delay(2300).fadeIn(4000);
+ 	$(".sundol").delay(2700).fadeIn(3000);
+ 	$(".sundoltwo").delay(3300).fadeIn(3000);
  	$(".smallplant").delay(3500).fadeIn(3000);
 
 
@@ -153,6 +153,8 @@ $(".next").click(function() {
           top: '45.5%'},1300);
  	$(".wgreen").delay(2500).animate ({
           top: '-20%'},4000);
+
+  $(".greenfillertwo").delay(2500).fadeIn(3000);
  	
  
  	$(".next").fadeOut(1000);
@@ -167,6 +169,7 @@ $(".nexttwo").click(function() {
 	$(".infocontfour").delay(1000).animate ({
           top: '-90%'},1300);
 	$(".wgreen").fadeOut(2000);
+  $(".greenfillertwo").fadeOut(2000);
 
 	$(".infocontfive").show();
  	$(".infocontfive").delay(1500).animate ({
@@ -192,8 +195,11 @@ $(".nextthree").click(function() {
  	$(".infocontsix").delay(1500).animate ({
           top: '40%'},1300);
 
-	$(".redfiller").delay(3500).fadeIn(3000);
+  $(".redfiller").delay(3500).fadeIn(3000);
+
+	$(".redfillertwo").delay(3000).fadeIn(3000);
 	$(".blood").delay(4500).fadeIn(3400);
+  $(".bloodtwo").delay(4000).fadeIn(3400);
 
  
  	$(".nextthree").fadeOut(1000);
@@ -208,6 +214,7 @@ $(".totwi").click(function() {
           top: '-90%'},1300);
 	$(".redfiller").fadeOut(1000);
 	$(".blood").fadeOut(1000);
+  $(".bloodtwo").fadeOut(1000);
 
  	$('html,body').animate({
         scrollTop: $("#pagethree").offset().top},
@@ -283,6 +290,7 @@ $(".twinexttwo").click(function() {
  	$(".twiinfocontfive").show();
  	$(".twiinfocontfive").delay(2000).animate ({
           top: '40%'},1300);
+  $(".twinextthree").fadeIn(2000);
  	$(".eiffel").delay(3300).animate ({
           top: '-33%'},2000);
 

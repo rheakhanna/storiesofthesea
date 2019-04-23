@@ -393,7 +393,6 @@ display: none;
 }
 
 .waveWrapper {
-    overflow: hidden;
     position: absolute;
     left: 0;
     right: 0;
@@ -437,7 +436,7 @@ display: none;
    -webkit-animation: move_wave 3s linear infinite;
 }
 .waveMiddle {
-    background-size: 50% 120px;
+    background-size: 50% 100px;
 }
 .waveAnimation .waveMiddle {
     animation: move_wave 9s linear infinite;
@@ -531,14 +530,6 @@ display: none;
   animation-delay: 4s;
 
 }
-
-/*@keyframes blinking{
-  0%{   opacity: 0;  }
-
-  50%{  opacity: 0.7; }
-
-  100%{  opacity: 0;  }
-}*/
 
 
 .sunplants {
@@ -657,6 +648,13 @@ display: none;
   opacity: 1;
 }
 
+.bloodtwo {
+  position: absolute;
+  display: none;
+  z-index: -1;
+  opacity: 1;
+  display: none;
+}
 
 .oil {
   width:200%;
@@ -924,6 +922,7 @@ display: none;
   left:35%;
   z-index: 5;
   position: absolute;
+  display: none;
 
 }
 
@@ -1749,6 +1748,18 @@ cursor: pointer;
   opacity: 0.9;
 
 }
+.greenfillertwo {
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  top: -85%;
+  background-color: #26CF23;
+  background-image: linear-gradient(#022400, #26CF23);
+  opacity: 0.9;
+  display: none;
+
+}
+
 
 .redfiller {
   position: absolute;
@@ -1761,6 +1772,16 @@ cursor: pointer;
 
 }
 
+.redfillertwo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  background-color: red;
+  opacity: 0.8;
+  display: none;
+
+}
 .blackfiller {
   position: absolute;
   width: 100%;
@@ -3257,221 +3278,7 @@ cursor: pointer;
 
 }
 
-/* .titlehead {
-  overflow: hidden;
-  position: absolute;
-  width: 80%;
-  bottom: 0px;
-  padding-bottom: 1px;
-  padding-top: 1px;
-  letter-spacing: 5px;
-  font-size: 90px;
-  background-color: transparent;
-  font-family: 'Brandon Grotesque', sans-serif;
-  text-transform: uppercase;
-  color: #001269;
-  font-weight: 800;
-  background-color: transparent;
-  }
-*/
 
-
-.sea {
-  margin: 200px 200px 0 auto;
-  height: 1000px;
-  transform: scale(1.1);
-
-}
-
-.sea .submarine-wrapper {
-  height: 1000px;
-  width: 600px;
-
-  margin-left: 510px;
-  -webkit-animation: diving 3s ease-in-out infinite, diving-rotate 3s ease-in-out infinite;
-          animation: diving 3s ease-in-out infinite, diving-rotate 3s ease-in-out infinite;
-}
-
-.sea .submarine-wrapper .submarine-body {
-  width: 500px;
-  height: 200px;
-  position: absolute;
-  margin-top: 50px;
-  left: 25px;
-  background-color: #D93A54;
-  border-radius: 100px;
-  background: linear-gradient(#D93A54, #bc243d);
-}
-/*.sea .submarine-wrapper .submarine-body .light {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 40px 150px 40px;
-  border-color: transparent transparent #FFFD70 transparent;
-  -webkit-transform: rotate(-50deg);
-          transform: rotate(-50deg);
-  top: 40px;
-  left: 99%;
-}*/
-
-.sea .submarine-wrapper .submarine-body .light:after {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 30px;
-  border-radius: 5px;
-  background-color: #D93A54;
-  margin-left: 450px;
-  z-index: 40;
-  margin-top: 160px;
-  transform: rotate(-40deg);
-}
-.sea .submarine-wrapper .submarine-body .window {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  margin-top: 60px;
-  right: 70px;
-  background: linear-gradient(#1e4554, #183642);
-  border-radius: 50%;
-  border: 3px solid #D93A54;
-}
-.sea .submarine-wrapper .submarine-body .window:after {
-  content: "";
-  position: absolute;
-  margin-top: 8px;
-  margin-left: 9px;
-  width: 50px;
-  height:50px;
-  border-radius: 50%;
-  background-color: transparent;
-  opacity: 0.8;
-  border-top: 5px solid white;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-.sea .submarine-wrapper .submarine-body .engine {
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  margin-top: 90px;
-  left: 220px;
-  background-color: #bc243d;
-  border-radius: 50%;
-  border: 5px solid #D93A54;
-}
-.sea .submarine-wrapper .submarine-body .engine:after, .sea .submarine-wrapper .submarine-body .engine:before {
-  position: absolute;
-
-  content: "";
-  border-radius: 5px;
-  background-color: white;
-  -webkit-animation: spin 900ms linear infinite;
-          animation: spin 900ms linear infinite;
-  opacity: 0.8;
-}
-.sea .submarine-wrapper .submarine-body .engine:after {
-  top: 19px;
-  width: 45px;
-  height: 8px;
-}
-.sea .submarine-wrapper .submarine-body .engine:before {
-  left: 19px;
-  width: 8px;
-  height: 45px;
-}
-.sea .submarine-wrapper .helix {
-  width: 60px;
-  height: 200px;
-  position: absolute;
-  margin-top: 55px;
-  left: 0;
-  background-color: #D93A54;
-  border-radius: 7px;
-  background: linear-gradient(#D93A54, #bc243d);
-}
-.sea .submarine-wrapper .helix:after {
-  content: "";
-  position: absolute;
-  margin-top: 7px;
-  margin-left: 10px;
-  width: 35px;
-  height: 185px;
-  border-radius: 3px;
-  background-color: transparent;
-  opacity: 0.8;
-  background: linear-gradient(to bottom, #D93A54, #D93A54 50%, #e57a8c 50%, #e57a8c);
-  background-size: 100% 20px;
-  -webkit-animation: helix-movement 110ms linear infinite;
-          animation: helix-movement 110ms linear infinite;
-}
-.sea .submarine-wrapper .hat {
-  width: 230px;
-  height: 100px;
-  position: absolute;
-  margin-top: 5px;
-  left: 160px;
-  background-color: #D93A54;
-  border-radius: 10px 10px 0 0;
-  z-index: -1;
-  background: linear-gradient(#D93A54, #d72d49);
-}
-.sea .submarine-wrapper .hat .periscope {
-  position: absolute;
- width: 10px;
-    height: 39px;
-  background-color: #D93A54;
-  margin-top: -50px;
-  margin-left: 150px;
-  border-radius: 5px 5px 0 0;
-}
-.sea .submarine-wrapper .hat .periscope:after, .sea .submarine-wrapper .hat .periscope:before {
-  content: "";
-  position: absolute;
-  width: 35px;
-  height: 20px;
-  border-radius: 5px;
-  margin-top: -10px;
-  background-color: #D93A54;
-}
-.sea .submarine-wrapper .hat .leds-wrapper {
-  width: 200px;
-  height: 25px;
-  position: relative;
-  top: 12px;
-  left: 15px;
-  background-color: #D93A54;
-  border-radius: 10px;
-  background: linear-gradient(#b3233a, #a21f35);
-}
-/*.sea .submarine-wrapper .hat .leds-wrapper .leds {
-  position: absolute;
-  margin-top: 10px;
-  margin-left: 30px;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: white;
-  -webkit-animation: leds-off 500ms linear infinite;
-          animation: leds-off 500ms linear infinite;
-}
-.sea .submarine-wrapper .hat .leds-wrapper .leds:after, .sea .submarine-wrapper .hat .leds-wrapper .leds:before {
-  content: "";
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: white;
-}
-.sea .submarine-wrapper .hat .leds-wrapper .leds:after {
-  margin-top: 0px;
-  margin-left: 25px;
-}
-.sea .submarine-wrapper .hat .leds-wrapper .leds:before {
-  margin-top: 0px;
-  margin-left: 34px;
-}*/
 
 @-webkit-keyframes spin {
   100% {
@@ -3688,28 +3495,38 @@ body {
 
   .box {
     width: 100%;
+    left: 15%;
+
   }
 
   .ticker-headline{
-    font-size:60px;
+    font-size:40px;
+    text-align: center;
   
   }
 
   .toppar {
     font-size:10px;
     line-height: 19px;
-    color: red;
     width: 100%;
+    left: 20%;
+    text-align: center;
+    padding-top: 45px;
   }
 
   .bottompar {
     font-size:10px;
     line-height: 19px;
+    text-align: center;
+    width: 100%;
   }
 
   .dive {
-    left: 50%;
-    top: 70%;
+    left: 65%;
+    top: 60%;
+    width: 60px;
+    height: 60px;
+    font: 10px/60px 'Brandon Grotesque', sans-serif;
 
   }
 
@@ -3742,14 +3559,1162 @@ body {
 }
 
 .righttext {
- top: 30%;
+ top: 26.4%;
+ right: 2.2%;
+}
+
+.infocontainer {
+  top: 61%;
+}
+
+.twiinfocontainer {
+  top: 61%;
+}
+
+.midinfocontainer {
+  top: 61%;
+}
+
+.abinfocontainer {
+  top: 61%;
+}
+
+.hadinfocontainer {
+  top: 11%;
+}
+
+.biomass {
+
+}
+
+
+
+.start {
+  left: 44%;
+  margin-top: 7%;
+  position: relative;
+  width: 55px;
+  height: 55px;
+  font: 10px/55px 'Brandon Grotesque', sans-serif;
+  text-transform: uppercase;
+  border-radius: 50%;
+}
+
+.twistart {
+  left: 44%;
+  margin-top: 7%;
+  position: relative;
+  width: 55px;
+  height: 55px;
+  font: 10px/55px 'Brandon Grotesque', sans-serif;
+  text-transform: uppercase;
+  border-radius: 50%;
+}
+
+.midstart {
+  left: 44%;
+  margin-top: 7%;
+  position: relative;
+  width: 55px;
+  height: 55px;
+  font: 10px/55px 'Brandon Grotesque', sans-serif;
+  text-transform: uppercase;
+  border-radius: 50%;
+}
+
+.abstart {
+  left: 44%;
+  margin-top: 7%;
+  position: relative;
+  width: 55px;
+  height: 55px;
+  font: 10px/55px 'Brandon Grotesque', sans-serif;
+  text-transform: uppercase;
+  border-radius: 50%;
+}
+
+.hadstart {
+  left: 44%;
+  margin-top: 7%;
+  position: relative;
+  width: 55px;
+  height: 55px;
+  font: 10px/55px 'Brandon Grotesque', sans-serif;
+  text-transform: uppercase;
+  border-radius: 50%;
+}
+
+#header {
+  font-size: 40px;
+  margin-top: -0.5%;
+  line-height: 50px;
+
+}
+
+#headertwo {
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: -1%;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+}
+
+#subheading {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 2%;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 3px;
+
+}
+
+#headerinfo {
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 33%;
+  color: white;
+  letter-spacing: 3px;
+  width: 45%;
+    z-index: 50;
+  margin-left: 27.5%;
+  padding-bottom: 6px;
+
+}
+
+
+#headerinfotwo {
+  font-size: 9px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 1%;
+  color: white;
+  z-index: 50;
+  letter-spacing: 3px;
+
+}
+
+.continue {
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+
+}
+
+.next {
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.nexttwo {
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif; 
+}
+
+.nextthree {
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.totwi {
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+
+
+.sunplants {
+  width: 100%;
+  height: 35%;
+  margin-top: 90%;
+  left:-1%;
+
+
+}
+
+
+.sundol {
+  width: 120%;
+  height: 60%;
+  opacity: 0.9;
+  left:3%;
+      margin-top: 30%;
+
+}
+
+.sundoltwo{
+  width: 120%;
+  height: 60%;
+  margin-top: 25%;
+  left:3%;
+}
+
+
+
+.smallplant{
+  width: 100%;
+  height: 40%;
+  margin-top: 85%;
+  left:8%;
+
+}
+
+
+
+.twicontinue {
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+
+}
+
+.twinext {
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.twinexttwo {
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif; 
+}
+
+.twinextthree {
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.twinextfour {
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.tomid {
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.biomass {
+  width: 45%;
+  height: 35%;
+  opacity: 0.6;
+  top: 45%;
+  left:60%;
+  z-index: 5;
+  transform: rotate(120deg);
+  display: none;
+  position: absolute;
+      -webkit-animation-name: spinone;
+    -webkit-animation-duration: 40000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spinone;
+    -moz-animation-duration: 40000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spinone;
+    -ms-animation-duration: 40000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    animation-name: spinone;
+    animation-duration: 40000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+.biomasstwo {
+  width: 45%;
+  height: 35%;
+  opacity: 0.6;
+  top: 45%;
+  left:42%;
+  z-index: 5;
+  display: none;
+  position: absolute;
+      -webkit-animation-name: spin;
+    -webkit-animation-duration: 85000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 85000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 85000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    animation-name: spin;
+    animation-duration: 85000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+.eiffel {
+  height: 200%;
+  opacity: 0.5;
+  top: 50%;
+  left:-60%;
+  z-index: 5;
+  position: absolute;
+
+}
+
+.midcontinue {
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+
+}
+
+.midnext {
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.midnexttwo {
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif; 
+}
+
+.midnextthree {
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.midnextfour {
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.toabyss{
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.light_beam {
+    margin-left: 24%;
+
+}
+
+.abcontinue {
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+
+}
+
+.abnext {
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.abnexttwo {
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif; 
+}
+
+.abnextthree {
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.abnextfour {
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.tohadal{
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.hadcontinue {
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+
+}
+
+.hadnext {
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.hadnexttwo {
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif; 
+}
+
+.hadnextthree {
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.hadnextfour {
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.totop{
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.hadoverlay {
+  background-color: black;
+  opacity: 0.8;
+  left: 20%;
+  position: absolute;
+  height: 100%;
+  width: 120%;
+  display: none;
+}
+
+}
+
+@media only screen and (max-height: 700px) {
+    .dive {
+        left: 65%;
+    top: 60%;
+    width: 60px;
+    height: 60px;
+    font: 10px/60px 'Brandon Grotesque', sans-serif;
+
+
+  }
+    .toppar {
+    font-size:9px;
+    line-height: 17px;
+    width: 100%;
+    left: 20%;
+    text-align: center;
+    padding-top: 35px;
+  }
+
+   .bottompar {
+    font-size:9px;
+    line-height: 17px;
+    text-align: center;
+    width: 100%;
+  }
+
+    .ticker-headline{
+    font-size:35px;
+    padding: 4px;
+    text-align: center;
+  
+  }
+
+    .box {
+    width: 100%;
+    left: 16%;
+
+  }
+
+  .lefttext {
+ top: 58%;
+}
+
+.righttext {
+ top: 23%;
+}
+
+.infocontainer {
+  top: 65%;
+}
+
+.twiinfocontainer {
+  top: 65%;
+}
+
+.midinfocontainer {
+  top: 65%;
+}
+
+.abinfocontainer {
+  top: 65%;
+}
+
+.hadinfocontainer {
+  top: 15%;
+}
+
+.biomass {
+
+}
+
+
+.start {
+  left: 45%;
+  margin-top: 6%;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  font: 8px/40px 'Brandon Grotesque', sans-serif;
+  text-transform: uppercase;
+  border-radius: 50%;
+}
+
+.twistart {
+ left: 45%;
+  margin-top: 6%;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  font: 8px/40px 'Brandon Grotesque', sans-serif;
+  text-transform: uppercase;
+  border-radius: 50%;
+}
+
+.midstart {
+ left: 45%;
+  margin-top: 6%;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  font: 8px/40px 'Brandon Grotesque', sans-serif;
+  text-transform: uppercase;
+  border-radius: 50%;
+}
+
+.abstart {
+ left: 45%;
+  margin-top: 6%;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  font: 8px/40px 'Brandon Grotesque', sans-serif;
+  text-transform: uppercase;
+  border-radius: 50%;
+}
+
+.hadstart {
+ left: 45%;
+  margin-top: 6%;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  font: 8px/40px 'Brandon Grotesque', sans-serif;
+  text-transform: uppercase;
+  border-radius: 50%;
+}
+
+#header {
+  font-size: 27px;
+  margin-top: -0.5%;
+  line-height: 37px;
+
+}
+
+#headertwo {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: -1%;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+}
+
+#subheading {
+  font-size: 10px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 2%;
+  text-transform: uppercase;
+  color: white;
+  left: -10%;
+  width: 60%;
+  letter-spacing: 3px;
+
+}
+
+#headerinfo {
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 30%;
+  color: white;
+  letter-spacing: 3px;
+  width: 60%;
+    z-index: 50;
+  margin-left: 20%;
+  padding-bottom: 6px;
+
+}
+
+
+#headerinfotwo {
+  font-size: 9px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 1%;
+  color: white;
+   margin-left: 20%;
+   width: 60%;
+  z-index: 50;
+  letter-spacing: 3px;
+
+}
+
+.continue {
+  z-index: 80;
+  left: 48.5%;
+  top: 57%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+
+}
+
+.next {
+  z-index: 80;
+  left: 48.5%;
+  top: 57%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.nexttwo {
+  z-index: 80;
+  left: 48.5%;
+  top: 57%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif; 
+}
+
+.nextthree {
+  z-index: 80;
+  left: 48.5%;
+  top: 57%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.totwi {
+  z-index: 80;
+  left: 48.5%;
+  top: 57%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+
+
+.sunplants {
+  width: 100%;
+  height: 35%;
+  margin-top: 85%;
+  left:-1%;
+
+
+}
+
+
+.sundol {
+  width: 120%;
+  height: 60%;
+  opacity: 0.9;
+  left:3%;
+      margin-top: 30%;
+
+}
+
+.sundoltwo{
+  width: 120%;
+  height: 60%;
+  margin-top: 25%;
+  left:3%;
+}
+
+
+
+.smallplant{
+  width: 100%;
+  height: 40%;
+  margin-top: 85%;
+  left:8%;
+
+}
+
+
+
+.twicontinue {
+  z-index: 80;
+  left: 48.5%;
+  top: 57%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+
+}
+
+.twinext {
+  z-index: 80;
+  left: 48.5%;
+  top: 58.5%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.twinexttwo {
+  z-index: 80;
+  left: 48.5%;
+  top: 58.5%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif; 
+}
+
+.twinextthree {
+  z-index: 80;
+  left: 48.5%;
+  top: 58.5%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.twinextfour {
+  z-index: 80;
+  left: 48.5%;
+  top: 58.5%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.tomid {
+  z-index: 80;
+  left: 48.5%;
+  top: 58.5%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.biomass {
+  width: 45%;
+  height: 35%;
+  opacity: 0.6;
+  top: 45%;
+  left:60%;
+  z-index: 5;
+  transform: rotate(120deg);
+  display: none;
+  position: absolute;
+      -webkit-animation-name: spinone;
+    -webkit-animation-duration: 40000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spinone;
+    -moz-animation-duration: 40000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spinone;
+    -ms-animation-duration: 40000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    animation-name: spinone;
+    animation-duration: 40000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+.biomasstwo {
+  width: 45%;
+  height: 35%;
+  opacity: 0.6;
+  top: 45%;
+  left:42%;
+  z-index: 5;
+  display: none;
+  position: absolute;
+      -webkit-animation-name: spin;
+    -webkit-animation-duration: 85000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 85000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 85000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    animation-name: spin;
+    animation-duration: 85000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+.eiffel {
+  height: 200%;
+  opacity: 0.5;
+  top: 50%;
+  left:-60%;
+  z-index: 5;
+  position: absolute;
+
+
+}
+
+.midcontinue {
+  z-index: 80;
+  left: 48.5%;
+  top: 57%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+
+}
+
+.midnext {
+  z-index: 80;
+  left: 48.5%;
+  top: 57%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.midnexttwo {
+  z-index: 80;
+  left: 48.5%;
+  top: 59%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif; 
+}
+
+.midnextthree {
+  z-index: 80;
+  left: 48.5%;
+  top: 59%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.midnextfour {
+  z-index: 80;
+  left: 48.5%;
+  top: 59%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.toabyss{
+  z-index: 80;
+  left: 48.5%;
+  top: 59%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.light_beam {
+    margin-left: 24.5%;
+
+}
+
+.abcontinue {
+  z-index: 80;
+  left: 48.5%;
+  top: 57%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+
+}
+
+.abnext {
+  z-index: 80;
+  left: 48.5%;
+  top: 57%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.abnexttwo {
+  z-index: 80;
+  left: 48.5%;
+  top: 58.5%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif; 
+}
+
+.abnextthree {
+  z-index: 80;
+  left: 48.5%;
+  top: 58.5%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.abnextfour {
+  z-index: 80;
+  left: 48.5%;
+  top: 57%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.tohadal{
+  z-index: 80;
+  left: 48.5%;
+  top: 57%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.hadcontinue {
+  z-index: 80;
+  left: 48.5%;
+  top: 57%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+
+}
+
+.hadnext {
+  z-index: 80;
+  left: 48.5%;
+  top: 57%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.hadnexttwo {
+  z-index: 80;
+  left: 48.5%;
+  top: 57%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif; 
+}
+
+.hadnextthree {
+  z-index: 80;
+  left: 48.5%;
+  top: 57%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.hadnextfour {
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.totop{
+  z-index: 80;
+  left: 48.5%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  font: 9px/65px 'Brandon Grotesque', sans-serif;
+}
+
+.hadoverlay {
+  background-color: black;
+  opacity: 0.8;
+  left: 15%;
+  position: absolute;
+  height: 100%;
+  width: 120%;
+  display: none;
+}
+
+
+}
+
+@media only screen and (max-height: 570px) {
+    .dive {
+    left: 65%;
+    top: 60%;
+    width: 50px;
+    height: 50px;
+    font: 9px/50px 'Brandon Grotesque', sans-serif;
+
+
+  }
+    .toppar {
+    font-size:8px;
+    line-height: 15px;
+    width: 100%;
+    left: 20%;
+    text-align: center;
+    padding-top: 35px;
+  }
+
+   .bottompar {
+    font-size:8px;
+    line-height: 15px;
+    text-align: center;
+    width: 100%;
+  }
+
+    .ticker-headline{
+    font-size:30px;
+    padding: 4px;
+    text-align: center;
+  
+  }
+
+  .lefttext {
+ top: 62%;
+}
+
+.righttext {
+ top: 20%;
+ right: 2.2%;
 }
 
 
 
 
 }
-
-
-
 
