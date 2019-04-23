@@ -286,15 +286,6 @@ display: none;
 }
 
 
-.pageonesub {
-  top: 0%;
-  left: 50%;
-  position: absolute;
-  height: 100%;
-  background: transparent;
-
-}
-
 
 
 .swim {
@@ -331,7 +322,7 @@ display: none;
 
 
 #pageone {
-	height: 100%;
+  height: 100%;
   width: 100%;
   overflow: hidden;
 
@@ -356,16 +347,6 @@ display: none;
 
 }
 
-#pageonelist {
-  top: 49%;
-  left: 60%;
-  position: absolute;
-  overflow: hidden;
-  height: 100%;
-  background: transparent;
-  
-
-}
 
 #infosun {
 	font-weight: 100;
@@ -621,6 +602,14 @@ display: none;
   position: absolute;
   left: 0%;
 
+}
+
+#colwave {
+    width:150%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
 }
 
 .information {
@@ -2275,6 +2264,13 @@ cursor: pointer;
   overflow: hidden;
 }
 
+#rowone {
+    width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+
 #rowpagefive{
   width: 100%;
   height: 100%;
@@ -3174,6 +3170,8 @@ cursor: pointer;
 
 .wrapper {
     position: relative;
+    width: 100%;
+    display: block;
 }
 
 .titleinfo {
@@ -3181,7 +3179,7 @@ cursor: pointer;
   color: #dfe4ff;
   width:95%;
   left:2%;
-  margin-top:-2%;
+  margin-top: -1%;
   overflow: hidden;
   letter-spacing: 3px;
   font-size: 84px;
@@ -3192,6 +3190,7 @@ cursor: pointer;
   line-height: 80px;
   font-weight: 800;
   background-color: transparent;
+  display: block;
 
 }
 
@@ -3208,6 +3207,53 @@ cursor: pointer;
   text-transform: uppercase;
   cursor: pointer;
   z-index: 90;
+  display: block;
+
+}
+
+.mobilewrapper {
+  position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: none;
+
+}
+
+.mobiletitleinfo {
+  font-family: 'Montserrat';
+  color: #dfe4ff;
+  width:95%;
+  left:5%;
+  top: 42%;
+  overflow: hidden;
+  letter-spacing: 3px;
+  font-size: 26px;
+  position: relative;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  line-height: 30px;
+  font-weight: 800;
+  text-align: center;
+  background-color: transparent;
+  display: none;
+
+}
+
+.mobilebegin {
+  font-family: 'Montserrat';
+  color: #001269;
+  font-size: 12px;
+  width: 3.5%;
+  position: relative;
+  font-weight: 400;
+ text-decoration: underline;
+  top: 42%;
+  left: 41%;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 90;
+  display: none;
 
 }
 
@@ -3635,26 +3681,29 @@ cursor: pointer;
 
 
 
+@media only screen and (max-width: 1100px) {
+body {
+    overflow: visible;
+  }
 
-@media (max-width: 768px){
   .box {
     width: 100%;
   }
 
   .ticker-headline{
-    font-size:70px;
+    font-size:60px;
   
   }
 
   .toppar {
-    font-size:13px;
+    font-size:10px;
     line-height: 19px;
     color: red;
     width: 100%;
   }
 
   .bottompar {
-    font-size:13px;
+    font-size:10px;
     line-height: 19px;
   }
 
@@ -3664,32 +3713,43 @@ cursor: pointer;
 
   }
 
-#pageone {
-    width: 100%;
-  }
+.wrapper {
+  display: none;
+}
+
+.titleinfo {
+  display: none;
+}
+
+.begin {
+  display: none;
+}
+
+.mobilewrapper {
+  display:block;
+}
+
+.mobiletitleinfo {
+  display: block;
+}
+
+.mobilebegin {
+  display: block;
+}
+
+.lefttext {
+ top: 55%;
+}
+
+.righttext {
+ top: 30%;
+}
+
+
 
 
 }
 
-
-/* .dive {
-  cursor: pointer;
-  z-index: 50;
-  left: 65%;
-  margin-top: 45%;
-  position: relative;
-  width: 80px;
-  height: 80px;
-  align-items: center;
-  text-align: center;
-  background: #002469;
-  color: white;
-  font: 13.5px/80px 'Brandon Grotesque', sans-serif;
-  text-transform: uppercase;
-  border-radius: 50%;
-  display: none;
-  animation: shadow-pulse 1.5s infinite, newfloat 4s infinite;
-}*/
 
 
 
