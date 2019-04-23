@@ -2,14 +2,15 @@ console.log ("hello");
 
 $(document).ready(function(e) { 
 
-$(".menuright, .menuleft").delay(200).fadeIn(3000);
-  $(".wfirst, .wone").delay(1000).fadeIn(3000);
+
+$(".menuright, .menuleft").delay(200).fadeIn(1300);
+  $(".wfirst, .wone").delay(1000).fadeIn(1000);
   $(".wfirst").animate ({
           top: '83%'},1500);
   $(".wone").animate ({
           top: '85%'},1500);
-    $(".box").delay(2500).fadeIn(3000);
-    $(".dive").delay(5000).fadeIn(3000);
+    $(".box").delay(1500).fadeIn(3000);
+    $(".dive").delay(3000).fadeIn(3000);
 
 
 
@@ -109,13 +110,11 @@ $(".about").click(function() {
 });
 
 
-
-
 $(".start").click(function() {
  	$(".infocontainer").fadeOut(1500);
  	$(".infoconttwo").show();
  	$(".infoconttwo").delay(1000).animate ({
-          top: '42.5%'},1300);
+          top: '40%'},1300);
  	$(".ray_box").delay(1500).fadeIn(2500);
  	$(".continue").delay(3000).fadeIn(2000);
 
@@ -130,7 +129,7 @@ $(".continue").click(function() {
  	
  	$(".infocontthree").show();
  	$(".infocontthree").delay(1500).animate ({
-          top: '42.5%'},1300);
+          top: '40%'},1300);
  	$(".sunplants").delay(2600).fadeIn(4000);
  	$(".sundol").delay(3000).fadeIn(3000);
  	$(".sundoltwo").delay(3500).fadeIn(3000);
@@ -151,7 +150,7 @@ $(".next").click(function() {
 
  	$(".infocontfour").show();
  	$(".infocontfour").delay(1500).animate ({
-          top: '46.5%'},1300);
+          top: '45.5%'},1300);
  	$(".wgreen").delay(2500).animate ({
           top: '-20%'},4000);
  	
@@ -171,7 +170,7 @@ $(".nexttwo").click(function() {
 
 	$(".infocontfive").show();
  	$(".infocontfive").delay(1500).animate ({
-          top: '42.5%'},1300);
+          top: '40%'},1300);
 
  	$(".warning").delay(3000).fadeIn(3000);
 
@@ -191,7 +190,7 @@ $(".nextthree").click(function() {
 
 	$(".infocontsix").show();
  	$(".infocontsix").delay(1500).animate ({
-          top: '42.5%'},1300);
+          top: '40%'},1300);
 
 	$(".redfiller").delay(3500).fadeIn(3000);
 	$(".blood").delay(4500).fadeIn(3400);
@@ -227,7 +226,7 @@ $(".twistart").click(function() {
  	$(".twiinfocontainer").fadeOut(1500);
  	$(".twiinfoconttwo").show();
  	$(".twiinfoconttwo").delay(1000).animate ({
-          top: '42.5%'},1300);
+          top: '40%'},1300);
  	$(".ray_boxtwo").delay(1500).fadeIn(2500);
  	$(".twicontinue").delay(3000).fadeIn(2000);
 
@@ -242,7 +241,7 @@ $(".twicontinue").click(function() {
  	$(".ray_boxtwo").fadeOut(2500);
  	$(".twiinfocontthree").show();
  	$(".twiinfocontthree").delay(2000).animate ({
-          top: '42.5%'},1300);
+          top: '40%'},1300);
  	$(".biomass").delay(3000).fadeIn(3000);
  	$(".biomasstwo").delay(3000).fadeIn(5000);
 
@@ -262,7 +261,7 @@ $(".twinext").click(function() {
 
  	$(".twiinfocontfour").show();
  	$(".twiinfocontfour").delay(2000).animate ({
-          top: '46%'},1300);
+          top: '45%'},1300);
  	$(".freedive, .freemove").delay(2000).fadeIn(3000);
 
  	$(".twinext").fadeOut(1000);
@@ -283,7 +282,7 @@ $(".twinexttwo").click(function() {
 
  	$(".twiinfocontfive").show();
  	$(".twiinfocontfive").delay(2000).animate ({
-          top: '42.5%'},1300);
+          top: '40%'},1300);
  	$(".eiffel").delay(3300).animate ({
           top: '-33%'},2000);
 
@@ -303,9 +302,9 @@ $(".twinextthree").click(function() {
 
  	$(".twiinfocontsix").show();
  	$(".twiinfocontsix").delay(2000).animate ({
-          top: '42.5%'},1300);
+          top: '40%'},1300);
  	$(".bluewhale").delay(3500).animate ({
-          top: '230%'},2500);
+          top: '230%'},2700);
 
  	$(".twinextthree").fadeOut(1000);
 	$(".twinextfour").delay(5000).fadeIn(2000);
@@ -320,7 +319,7 @@ $(".twinextfour").click(function() {
 
  	$(".twiinfocontseven").show();
  	$(".twiinfocontseven").delay(2000).animate ({
-          top: '46%'},1300);
+          top: '45%'},1300);
  	$(".dolph").delay(3000).animate({left: '+=90%', top: '+=-120%'}, 5000);
  	$(".dolphtwo").delay(5000).animate({left: '+=-85%', top: '+=-100%'}, 5000);
  	$(".dolphthree").delay(7000).animate({left: '+=-86%', top: '+=130%'}, 5000);
@@ -357,7 +356,7 @@ $(".midstart").click(function() {
  	$(".midinfocontainer").fadeOut(1500);
  	$(".midinfoconttwo").show();
  	$(".midinfoconttwo").delay(1000).animate ({
-          top: '42.5%'},1300);
+          top: '40%'},1300);
  	$(".light_beam").delay(3000).fadeIn(4500);
  	$(".midcontinue").delay(4500).fadeIn(2000);
 
@@ -370,7 +369,7 @@ $(".midcontinue").click(function() {
  	$(".light_beam").fadeOut(2500);
  	$(".midinfocontthree").show();
  	$(".midinfocontthree").delay(2100).animate ({
-          top: '46%'},1300);
+          top: '45%'},1300);
  	$(".midsub").delay(2500).animate ({
           top: '43%'},4000);
  	$(".midsubtwo").delay(3500).animate ({
@@ -409,7 +408,7 @@ $(".midnext").click(function() {
 
  	$(".midinfocontfour").show();
  	$(".midinfocontfour").delay(3500).animate ({
-          top: '42%'},1300);
+          top: '40%'},1300);
  	$(".blackfiller").delay(4000).fadeIn(3000);
  	$(".oil").delay(6000).fadeIn(3000);
 
@@ -428,7 +427,7 @@ $(".midnexttwo").click(function() {
 
  	$(".midinfocontfive").show();
  	$(".midinfocontfive").delay(2100).animate ({
-          top: '46%'},1300);
+          top: '45%'},1300);
  	$(".squid").delay(3000).animate ({
           top: '-34%'},5000);
  	$(".squidtwo").delay(4000).animate ({
@@ -436,26 +435,6 @@ $(".midnexttwo").click(function() {
 
 
  	$(".midnexttwo").fadeOut(1000);
-	$(".midnextthree").delay(5000).fadeIn(2000);
- 	
-
-});
-
-
-$(".midnextthree").click(function() {
- 	$(".midinfocontfive").delay(1000).animate ({
-          top: '-90%'},1300);
- 	$(".squid").delay(1000).animate ({
-          top: '-234%'},2000);
- 	$(".squidtwo").delay(1500).animate ({
-          top: '-130%'},2000);
-
- 	$(".midinfocontseven").show();
- 	$(".midinfocontseven").delay(2000).animate ({
-          top: '46%'},1300);
-
-
- 	$(".midnextthree").fadeOut(1000);
 	$(".toabyss").delay(5000).fadeIn(2000);
  	
 
@@ -463,20 +442,28 @@ $(".midnextthree").click(function() {
 
 
 $(".toabyss").click(function() {
- 	$(".midinfocontseven").delay(1000).animate ({
+ 	$(".midinfocontfive").delay(1000).animate ({
           top: '-90%'},1300);
+ 	$(".squid").delay(1000).animate ({
+          top: '-234%'},2000);
+ 	$(".squidtwo").delay(1500).animate ({
+          top: '-130%'},2000);
 
- 	$('html,body').animate({
+    $('html,body').animate({
         scrollTop: $("#pagefive").offset().top},
         3000,'linear');
 
 
- 	$(".toabyss").fadeOut(1000);
+
+  $(".toabyss").fadeOut(1000);
     $(".abyssal").css('opacity', '1');
   $(".midnight").css('opacity', '0.4');
-	
+ 	
 
 });
+
+
+
 
 
 $(".abstart").click(function() {
@@ -485,7 +472,7 @@ $(".abstart").click(function() {
  	$(".abinfoconttwo").delay(1000).animate ({
           top: '46%'},1300);
     $(".overlay").delay(1000).fadeIn(2000);
-  $(".flashlight2").delay(4000).fadeIn(3000);
+  $(".flashlight2").delay(3000).fadeIn(3000);
 
  	$(".abcontinue").delay(2000).fadeIn(2000);
 
@@ -501,7 +488,7 @@ $(".abcontinue").click(function() {
           top: '46%'},1300);
 
  	$(".abcontinue").fadeOut(1000);
-	$(".abnext").delay(2000).fadeIn(2000);
+	$(".abnext").delay(4000).fadeIn(2000);
  
 
 });
@@ -516,7 +503,7 @@ $(".abnext").click(function() {
           top: '46%'},1300);
 
  	$(".abnext").fadeOut(1000);
-	$(".abnexttwo").delay(3000).fadeIn(2000);
+	$(".abnexttwo").delay(4000).fadeIn(2000);
  	
 
 });
@@ -532,7 +519,7 @@ $(".abnexttwo").click(function() {
 
 
  	$(".abnexttwo").fadeOut(1000);
-	$(".tohadal").delay(3000).fadeIn(2000);
+	$(".tohadal").delay(4000).fadeIn(2000);
  	
 
 });
@@ -559,8 +546,8 @@ $(".hadstart").click(function() {
  	$(".hadinfoconttwo").show();
  	$(".hadinfoconttwo").delay(3000).animate ({
           top: '10%'},1300);
- 	$(".overlay").delay(1000).fadeIn(2000);
- 	$(".flashlight").delay(4000).fadeIn(3000);
+ 	$(".hadoverlay").delay(1000).fadeIn(2000);
+ 	$(".flashlight").delay(3500).fadeIn(3000);
  	$(".hadcontinue").delay(3500).fadeIn(2000);
 
 
@@ -575,7 +562,7 @@ $(".hadcontinue").click(function() {
           top: '70%'},1300);
 
  	$(".hadcontinue").fadeOut(1000);
-	$(".hadnext").delay(6000).fadeIn(2000);
+	$(".hadnext").delay(3400).fadeIn(2000);
  
 
 });
@@ -590,7 +577,7 @@ $(".hadnext").click(function() {
           top: '46%'},1300);
 
  	$(".hadnext").fadeOut(1000);
-	$(".hadnexttwo").delay(5000).fadeIn(2000);
+	$(".hadnexttwo").delay(3600).fadeIn(2000);
  	
 
 });
@@ -606,13 +593,12 @@ $(".hadnexttwo").click(function() {
 
 
  	$(".hadnexttwo").fadeOut(1000);
-	$(".hadnextthree").delay(5000).fadeIn(2000);
+	$(".hadnextthree").delay(3600).fadeIn(2000);
  	
-
 });
 
 
-$(".hadnexthree").click(function() {
+$(".hadnextthree").click(function() {
  	$(".hadinfocontfive").delay(1000).animate ({
           top: '-90%'},1300);
 
@@ -622,23 +608,24 @@ $(".hadnexthree").click(function() {
 
 
  	$(".hadnextthree").fadeOut(1000);
-	// $(".totop").delay(5000).fadeIn(2000);
+	$(".hadnextfour").delay(3600).fadeIn(2000);
  	
 
 });
 
-// $(".totop").click(function() {
-//  	$(".hadinfocontsix").delay(1000).animate ({
-//           top: '-90%'},1300);
+$(".hadnextfour").click(function() {
+ 	$(".hadinfocontsix").delay(1000).animate ({
+          top: '-90%'},1300);
 
-//  	$('html,body').animate({
-//         scrollTop: $("#pagetwo").offset().top},
-//         4000,'linear');
+ 	$('html,body').animate({
+        scrollTop: $("#pageone").offset().top},
+        4000,'linear');
 
-//  	$(".totop").fadeOut(1000);
+ 	$(".hadnextfour").fadeOut(1000);
+    $(".hadoverlay").fadeOut(1000);
  	
 
-// });
+});
 
 $("body").mousemove(function(e){
 $('.flashlight').css('top', e.clientY-100).css('left', e.clientX-100);
@@ -649,17 +636,9 @@ $('.flashlight2').css('top', e.clientY-100).css('left', e.clientX-100);
 });
 
 
-window.onscroll = function() {myFunction()};
-
-function myFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 110;
-  document.getElementById("myBar").style.width = scrolled + "%";
-}
-
-
-
+// $(document).ready(function(){
+//     $(this).scrollTop(0);
+// });
 
 
 

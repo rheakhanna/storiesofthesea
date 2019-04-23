@@ -319,6 +319,7 @@ display: none;
 
 .container {
   height: 100%;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -599,7 +600,7 @@ display: none;
   width: 95%;
   height: 80%;
   opacity: 0.9;
-  margin-top: 10%;
+  margin-top: 10.1%;
   left:3%;
   position: absolute;
   display: none;
@@ -632,6 +633,7 @@ display: none;
 
 #header {
   font-size: 40px;
+  margin-top: -0.5%;
   font-weight: 600;
   text-align: center;
   color: white;
@@ -646,7 +648,7 @@ display: none;
   border-top: 1px dashed white;
   background: none;
   height:0;
-  margin-top: 0.5%;
+  margin-top: 1%;
 }
 
 
@@ -655,7 +657,7 @@ display: none;
   border-top: 1px dashed black;
   background: none;
   height:0;
-  margin-top: 0.5%;
+  margin-top: 1%;
 }
 
 
@@ -678,10 +680,10 @@ display: none;
 }
 
 #headertwo {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
   text-align: center;
-  margin-top: -0.5%;
+  margin-top: 1%;
   color: white;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -703,7 +705,7 @@ display: none;
   font-size: 12px;
   font-weight: 400;
   text-align: center;
-  margin-top: 0.5%;
+  margin-top: 1%;
   text-transform: uppercase;
   color: white;
   letter-spacing: 3px;
@@ -723,20 +725,20 @@ display: none;
 }
 
 #headerinfo {
-  font-size: 25px;
+  font-size: 29px;
   font-weight: 600;
   text-align: center;
   margin-top: 0%;
   color: white;
   letter-spacing: 3px;
-  width: 40%;
-  margin-left: 30%;
+  width: 45%;
+  margin-left: 27.5%;
 
 }
 
 
 #headerinfotwo {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   text-align: center;
   margin-top: 1%;
@@ -937,10 +939,10 @@ display: none;
 }
 
 .bluewhale {
-  height: 210%;
+  height: 240%;
   opacity: 0.7;
   top: -240%;
-  left:24%;
+  left:41%;
   z-index: 0;
   position: absolute;
 
@@ -1169,9 +1171,9 @@ display: none;
 .dive {
   cursor: pointer;
   z-index: 50;
-  left: 65%;
-  margin-top: 45%;
-  position: relative;
+  left: 55%;
+  margin-top: 29%;
+  position: absolute;
   width: 80px;
   height: 80px;
   align-items: center;
@@ -1207,7 +1209,7 @@ cursor: pointer;
 .midcontinue {
   cursor: pointer;
   z-index: 80;
-  left: 48.5%;
+  left: 49.1%;
   margin-top: 45%;
   position: relative;
   width: 50px;
@@ -1880,7 +1882,7 @@ cursor: pointer;
     height:600px;
     width:120%;
    -webkit-transform: rotate(0deg);
-    top:-28%;
+    top:-26%;
     left: -5%;
 
 }
@@ -1927,7 +1929,7 @@ cursor: pointer;
   cursor: pointer;
   z-index: 15;
   left: 47%;
-  margin-top: 3%;
+  margin-top: 3.1%;
   position: relative;
   width: 90px;
   height: 90px;
@@ -1946,7 +1948,7 @@ cursor: pointer;
   z-index: 80;
   left: 48.5%;
   margin-top: 45%;
-  position: relative;
+  position: absolute;
   width: 50px;
   height: 50px;
   align-items: center;
@@ -2041,7 +2043,7 @@ cursor: pointer;
   cursor: pointer;
   z-index: 80;
   left: 47%;
-  margin-top: 3%;
+  margin-top: 3.1%;
   position: relative;
   width: 90px;
   height: 90px;
@@ -2672,6 +2674,45 @@ cursor: pointer;
 
 }
 
+#extrabyssfiller{
+  background-color: #04043D;
+  height: 100%;
+  width:150%;
+  opacity: 0.8;
+  margin-top: 0%;
+  z-index: 10;
+  overflow: hidden;
+  position: absolute;
+  left: 0%;
+
+}
+
+#extrabayssfilltwo{
+  background-color: #04043D;
+  height: 100%;
+  width:150%;
+  opacity: 0.8;
+  margin-top: 0%;
+  z-index: 10;
+  overflow: hidden;
+  position: absolute;
+  left: 0%;
+
+}
+
+#extraabthree {
+  background-color: #04043D;
+  height: 100%;
+  width:150%;
+  opacity: 0.8;
+  margin-top: 0%;
+  z-index: 10;
+  overflow: hidden;
+  position: absolute;
+  left: 0%;
+
+}
+
 #fillerthirty{
   background-color: #04043D;
   height: 100%;
@@ -2959,6 +3000,16 @@ cursor: pointer;
 }
 
 .overlay {
+  background-color: black;
+  opacity: 0.8;
+  left: 0%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+.hadoverlay {
   background-color: black;
   opacity: 0.8;
   left: 0%;
@@ -3584,6 +3635,61 @@ cursor: pointer;
 
 
 
+
+@media (max-width: 768px){
+  .box {
+    width: 100%;
+  }
+
+  .ticker-headline{
+    font-size:70px;
+  
+  }
+
+  .toppar {
+    font-size:13px;
+    line-height: 19px;
+    color: red;
+    width: 100%;
+  }
+
+  .bottompar {
+    font-size:13px;
+    line-height: 19px;
+  }
+
+  .dive {
+    left: 50%;
+    top: 70%;
+
+  }
+
+#pageone {
+    width: 100%;
+  }
+
+
+}
+
+
+/* .dive {
+  cursor: pointer;
+  z-index: 50;
+  left: 65%;
+  margin-top: 45%;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  text-align: center;
+  background: #002469;
+  color: white;
+  font: 13.5px/80px 'Brandon Grotesque', sans-serif;
+  text-transform: uppercase;
+  border-radius: 50%;
+  display: none;
+  animation: shadow-pulse 1.5s infinite, newfloat 4s infinite;
+}*/
 
 
 
